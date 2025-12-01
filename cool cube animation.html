@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bouncy Cube</title>
+  <style>
+    html,body{
+      height:100%;
+      margin:0;
+      background:#fff;
+      overflow:hidden;
+      font-family:system-ui;
+    }
+
+    .cube{
+      width:80px;
+      height:80px;
+      position:absolute;
+      top:40%;
+      left:40%;
+      background:#4ed4ff;
+      border-radius:12px;
+      box-shadow:0 6px 14px rgba(0,0,0,0.15);
+      animation: bounce 3.7s infinite linear;
+    }
+
+    /* lil 3D-ish touch */
+    .cube::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(145deg, rgba(255,255,255,0.5), rgba(0,0,0,0.05));
+      border-radius:12px;
+      pointer-events:none;
+    }
+
+    @keyframes bounce{
+      0%   { transform: translate(0,0); }
+      15%  { transform: translate(60vw,10vh); }
+      30%  { transform: translate(10vw,60vh); }
+      45%  { transform: translate(75vw,70vh); }
+      60%  { transform: translate(20vw,20vh); }
+      75%  { transform: translate(80vw,40vh); }
+      100% { transform: translate(0,0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="cube"></div>
+</body>
+</html>
