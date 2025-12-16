@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guld Design</title>
+<style>
+  :root {
+    --color-bg: #f4ede1;
+    --color-text: #2a3e24;
+    --color-accent: #c3944b;
+    --color-placeholder: #c4954c;
+    --color-card-bg: #f4ede1;
+    --color-card-hover-bg: #4f6035;
+    --color-card-hover-text: #c4954c;
+    --shadow-normal: rgba(0, 0, 0, 0.1);
+    --shadow-hover: rgba(0, 0, 0, 0.2);
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #EADBBF;
+    transition: transform 0.3s ease;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-weight: 700;         
+    font-size: 22px;          
+    padding: 10px 18px;        
+    color: var(--color-text);
+    letter-spacing: 0.5px;     
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--color-accent);  
+    transform: translateY(-2px); 
+}
+
+  
+  .brand-logo {
+    height: 90px; 
+    width: auto;
+    display: block;
+}
+
+
+  .brand-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+    padding: 0;
+  }
+
+  .nav-left, .nav-right {
+    display: flex;
+    gap: 20px;
+  }
+
+  
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 140px;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+
+  .hero img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    background-color: var(--color-placeholder);
+    flex-shrink: 0;
+  }
+
+  .hero-text {
+    max-width: 500px;
+  }
+
+  .intro { font-size: 18px; margin-bottom: 10px; }
+  .name { font-family: 'Playfair Display', serif; font-size: 48px; color: #c4954c; margin: 0 0 10px; }
+  .name span { display: block; }
+  .subtitle { font-size: 20px; margin-bottom: 30px; }
+  .description {
+  margin-bottom: 20px;
+}
+s
+.intro {
+    font-size: 1.2rem;        
+    color: #c3944b;           
+    font-family: var(--font-accent); 
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+
+  .contact-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    border: 2px solid var(--color-text);
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  .contact-button span.arrow {
+    margin-left: 10px;
+    transform: translateX(-10px);
+    opacity: 0;
+    transition: .3s ease;
+  }
+
+  .contact-button:hover {
+    background: var(--color-card-hover-bg);
+    color: var(--color-card-hover-text);
+  }
+
+  .contact-button:hover span.arrow {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  /* ABILITIES */
+  .abilities {
+    max-width: 1200px;
+    margin: 60px auto;
+    text-align: center;
+  }
+
+  .abilities h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+
+  .abilities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+  }
+
+  .ability-card {
+    background: var(--color-card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 8px 20px var(--shadow-normal);
+    text-align: center;
+    transition: .3s ease;
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  .ability-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 28px var(--shadow-hover);
+    background: var(--color-card-hover-bg);
+    color: var(--color-card-hover-text);
+  }
+
+  .ability-img {
+    background: var(--color-placeholder);
+    height: 180px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ability-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+
+  @media (max-width: 1000px) {
+    .hero { flex-direction: column; text-align: center; }
+    .abilities-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav id="nav">
+  <div class="nav-left">
+    <a href="aboutme.html">About Me</a>
+  </div>
+
+  <a href="index.html" class="brand-link">
+    <img src="FullLogo_Transparent_NoBuffer.png" alt="Guld Design Logo" class="brand-logo">
+  </a>
+
+  <div class="nav-right">
+    <a href="abilities.html">Portfolio</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <img src="589712823_1857239989001892_1270823599313165411_n.jpg" alt="Placeholder Image">
+
+  <div class="hero-text">
+
+    <h1 class="name">
+      <span>Josefine</span>
+      <span>Korsgaard</span>
+      <span>Guldbek</span>
+    </h1>
+
+    <div class="subtitle">Multimediadesigner | Aesthetic Enthusiast | Creative Technomancer</div>
+
+    <p class="description">
+      I create digital worlds with a mix of thoughtful structure and playful imagination. I love solving problems in a clear, practical way - but always with a spark of magic. Whether it’s crafting sleek interfaces, building engaging experiences, or bringing quirky ideas to life, I’m all about turning concepts into something real, usable, and memorable.
+    </p>
+
+    <p class="description">
+      My work blends creativity and strategy, making sure every detail isn’t just pretty - it works. I enjoy exploring new tools, experimenting with interactive design, and finding clever solutions that make people smile. For me, design isn’t just about visuals; it’s about creating experiences that stick.
+    </p>
+
+    <a href="contact.html" class="contact-button">
+      Contact Me <span class="arrow">→</span>
+    </a>
+
+  </div> 
+
+</section>
+
+
+<section class="abilities" id="abilities">
+  <h2>My Projects</h2>
+
+  <div class="abilities-grid">
+
+    <a href="abilities.html#css_animation" class="ability-card">
+      <div class="ability-img"><img src="css_animation_thumnbail.png" alt=css-animation></div>
+      <h3>CSS Animation</h3>
+    </a>
+
+    <a href="abilities.html#style-tiles" class="ability-card">
+       <div class="ability-img">
+        <img src="style_tile.png" alt="Style Tile">
+      </div>
+      <h3>Style Tiles</h3>
+    </a>
+
+    <a href="abilities.html#illustration" class="ability-card">
+      <div class="ability-img">
+        <img src="4.5.png" alt="Illustration Preview">
+      </div>
+      <h3>Illustration</h3>
+    </a>
+
+    <a href="abilities.html#animation" class="ability-card">
+      <div class="ability-img">
+        <img src="video-capture-t0000.00seg-1062.png" alt="Animation Preview">
+      </div>
+      <h3>Animation</h3>
+    </a>
+
+    <a href="abilities.html#photography" class="ability-card">
+      <div class="ability-img">
+        <img src="20251202_093816.jpg" alt="Photography Preview">
+      </div>
+      <h3>Photography</h3>
+    </a>
+
+    <a href="abilities.html#tone-of-voice" class="ability-card">
+      <div class="ability-img">
+        <img src="tone_of_voice.png" alt="Tone of Voice Preview">
+      </div>
+      <h3>Tone of Voice</h3>
+    </a>
+
+  </div>
+</section>
+
+
+<footer style="background:#EADBBF; text-align:center; padding:20px 0; margin-top:40px;">
+  <p style="margin:0; color:#2a3e24; font-size:14px;">
+    Copyright &copy; 2025 — Josefine Korsgaard Guldbek. All Rights Reserved.
+  </p>
+</footer>
+
+<script>
+  (function() {
+    const nav = document.getElementById('nav');
+    let lastY = window.pageYOffset || 0;
+    let ticking = false;
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const currentY = window.pageYOffset || 0;
+          nav.style.transform = 
+            currentY > lastY && currentY > 60 
+            ? 'translateY(-100%)'
+            : 'translateY(0)';
+          lastY = currentY <= 0 ? 0 : currentY;
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+  })();
+</script>
+
+</body>
+</html>

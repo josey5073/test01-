@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me - Guld Design</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --color-bg: #f4ede1;
+    --color-text: #2a3e24;
+    --color-accent: #c3944b;
+    --color-placeholder: #c4954c;
+    --color-card-hover-bg: #4f6035;
+    --color-card-hover-text: #c4954c;
+    --shadow-normal: rgba(0, 0, 0, 0.1);
+    --shadow-hover: rgba(0, 0, 0, 0.2);
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #EADBBF;
+    transition: transform 0.3s ease;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 10px 18px;
+    color: var(--color-text);
+    letter-spacing: 0.5px;
+    transition: 0.2s ease;
+  }
+
+  nav a:hover {
+    color: var(--color-accent);
+    transform: translateY(-2px);
+  }
+
+  .brand-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+    padding: 0;
+  }
+
+  .brand-logo {
+    height: 90px;
+    width: auto;
+  }
+
+  .nav-left, .nav-right {
+    display: flex;
+    gap: 20px;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 140px;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+
+  .hero img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    background-color: var(--color-placeholder);
+    flex-shrink: 0;
+  }
+
+  .hero-text {
+    max-width: 500px;
+  }
+
+  .hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: var(--color-accent);
+    margin-bottom: 20px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .contact-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    border: 2px solid var(--color-text);
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  .contact-button span.arrow {
+    margin-left: 10px;
+    transform: translateX(-10px);
+    opacity: 0;
+    transition: .3s ease;
+  }
+
+  .contact-button:hover {
+    background: var(--color-card-hover-bg);
+    color: var(--color-card-hover-text);
+  }
+
+  .contact-button:hover span.arrow {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .programs {
+    max-width: 1000px;
+    margin: 60px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .programs h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  .program-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .program-icons .icon-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .program-icons .icon-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px var(--shadow-hover);
+  }
+
+  @media (max-width: 1000px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero-text h1 {
+      font-size: 36px;
+    }
+    .hero-text p {
+      font-size: 16px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-left">
+    <a href="aboutme.html">About Me</a>
+  </div>
+
+  <a href="index.html" class="brand-link">
+    <img src="FullLogo_Transparent_NoBuffer.png" alt="Guld Design Logo" class="brand-logo">
+  </a>
+
+  <div class="nav-right">
+    <a href="abilities.html">Portfolio</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <img src="590278898_852631017632281_6714931671900772470_n.jpg" alt="Josefine Korsgaard Guldbek">
+  <div class="hero-text">
+    <h1>A little bit about me</h1>
+    <p>Hi, I’m Josefine Korsgaard Guldbek, 22 years old, currently studying at UCL Odense to become a multimediadesigner. My days are a mix of learning, creating, and exploring the endless possibilities of visual storytelling.</p>
+    <p>I spend a lot of my time illustrating for people all around the world, bringing ideas to life through custom artwork. I also dedicate time to personal projects, where I can experiment, play, and fully explore my own creative visions.</p>
+    <p>I’ve always been drawn to aesthetics - anything from minimal, clean visuals to rich, vibrant worlds - and I love the challenge of making every project feel alive and intentional. For me, design and illustration aren’t just about visuals; they’re about creating experiences that feel complete and meaningful, no matter the style.</p>
+    <a href="contact.html" class="contact-button">Contact Me <span class="arrow">→</span></a>
+  </div>
+</section>
+
+<section class="programs">
+  <h2>Programs I Know</h2>
+  <div class="program-icons">
+    <img src="photoshop.png" alt="Photoshop" class="icon-img">
+    <img src="photoshop-lightroom.png" alt="Lightroom" class="icon-img">
+    <img src="after-effects.png" alt="After Effects" class="icon-img">
+    <img src="premiere-pro.png" alt="Premiere Pro" class="icon-img">
+    <img src="illustrator.png" alt="Illustrator" class="icon-img">
+    <img src="figma-color.png" alt="Figma" class="icon-img">
+  </div>
+</section>
+
+<footer style="background:#EADBBF; text-align:center; padding:20px 0; margin-top:40px;">
+  <p style="margin:0; color:#2a3e24; font-size:14px;">
+    Copyright &copy; 2025 — Josefine Korsgaard Guldbek. All Rights Reserved.
+  </p>
+</footer>
+
+</body>
+</html>

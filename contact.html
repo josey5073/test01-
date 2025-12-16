@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guld Design - Contact</title>
+<style>
+  :root {
+    --color-bg: #f4ede1;
+    --color-text: #2a3e24;
+    --color-accent: #c3944b;
+    --color-placeholder: #c4954c;
+    --color-card-bg: #ffffff;
+    --color-card-hover-bg: #4f6035;
+    --color-card-hover-text: #c4954c;
+    --shadow-normal: rgba(0,0,0,0.1);
+    --shadow-hover: rgba(0,0,0,0.2);
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #EADBBF;
+    transition: transform 0.3s ease;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 10px 18px;
+    color: var(--color-text);
+    letter-spacing: 0.5px;
+    transition: 0.2s ease;
+  }
+
+  nav a:hover {
+    color: var(--color-accent);
+    transform: translateY(-2px);
+  }
+
+  .brand-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+    padding: 0;
+  }
+
+  .brand-logo {
+    height: 90px;
+    width: auto;
+  }
+
+  .nav-left, .nav-right {
+    display: flex;
+    gap: 20px;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 140px;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+
+  .hero-text {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: var(--color-accent);
+  }
+
+  .hero-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+.contact-card {
+  background: #4f6035;
+  color: #f4ede1;
+  padding: 6px 16px; 
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.contact-card h2 {
+  color: #c4954c;
+  text-align: left;
+  margin: 4px 0 6px 0;
+  font-size: 16px; 
+}
+
+.contact-card p {
+  text-align: left;
+  margin: 2px 0; 
+  font-size: 16px; 
+}
+
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-form input, 
+  .contact-form textarea {
+    padding: 14px 16px;
+    font-size: 16px;
+    border: 2px solid var(--color-text);
+    border-radius: 12px;
+    background: var(--color-card-bg);
+    color: var(--color-text);
+    resize: vertical;
+    transition: all 0.3s ease;
+  }
+
+  .contact-form input:focus, 
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 8px rgba(195,148,75,0.5);
+  }
+
+  .contact-form textarea {
+    min-height: 160px; 
+  }
+
+  .contact-form button {
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid var(--color-text);
+    background: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    color: var(--color-text);
+    border-radius: 12px;
+  }
+
+  .contact-form button span.arrow {
+    margin-left: 10px;
+    transform: translateX(-10px);
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+
+  .contact-form button:hover {
+    background: var(--color-card-hover-bg);
+    color: var(--color-card-hover-text);
+    border-color: var(--color-card-hover-text);
+  }
+
+  .contact-form button:hover span.arrow {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  @media (max-width: 1000px) {
+    .hero { flex-direction: column; text-align: center; }
+    .hero-text h1 { font-size: 36px; }
+    .hero-text p { font-size: 16px; }
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-left">
+    <a href="aboutme.html">About Me</a>
+  </div>
+
+  <a href="index.html" class="brand-link">
+    <img src="FullLogo_Transparent_NoBuffer.png" alt="Guld Design Logo" class="brand-logo">
+  </a>
+
+  <div class="nav-right">
+    <a href="abilities.html">Portfolio</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Contact Me</h1>
+    <p>Have a project, idea, or just want to say hi? Fill out the form below and I’ll get back to you as soon as possible.</p>
+
+    <div class="contact-card">
+      <h2>Other ways to reach me</h2>
+      <p>Email: j-guld@hotmail.com</p>
+      <p>Phone: +4542750848</p>
+    </div>
+
+    <form class="contact-form" action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message <span class="arrow">→</span></button>
+    </form>
+  </div>
+</section>
+
+<footer style="background:#EADBBF; text-align:center; padding:20px 0; margin-top:40px;">
+  <p style="margin:0; color:#2a3e24; font-size:14px;">
+    Copyright &copy; 2025 — Josefine Korsgaard Guldbek. All Rights Reserved.
+  </p>
+</footer>
+
+
+<script>
+  (function() {
+    const nav = document.getElementById('nav');
+    let lastY = window.pageYOffset || 0;
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if(!ticking) {
+        window.requestAnimationFrame(() => {
+          const currentY = window.pageYOffset || 0;
+          nav.style.transform = (currentY > lastY && currentY > 60) ? 'translateY(-100%)' : 'translateY(0)';
+          lastY = currentY <= 0 ? 0 : currentY;
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, {passive:true});
+  })();<!-- Other Ways to Reach Me Card -->
+<div class="contact-card">
+  <h2>Other Ways to Reach Me</h2>
+  <p>Email: j-guld@hotmail.com</p>
+  <p>Phone: +4542750848</p>
+</div>
+
+</script>
+
+</body>
+</html>

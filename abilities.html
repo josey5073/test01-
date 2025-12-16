@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guld Design - Abilities</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    background: #f4ede1;
+    color: #2a3e24;
+  }
+
+  :root {
+    --color-bg: #f4ede1;
+    --color-text: #2a3e24;
+    --color-accent: #c3944b;
+    --soft-bg: #eadbbf;
+    --box-bg: #4f6035;
+    --box-text: #f4ede1;
+    --box-header: #c4954c;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #EADBBF;
+    transition: transform 0.3s ease;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 10px 18px;
+    color: var(--color-text);
+    letter-spacing: 0.5px;
+    transition: 0.2s ease;
+  }
+
+  nav a:hover {
+    color: var(--color-accent);
+    transform: translateY(-2px);
+  }
+
+  .brand-logo {
+    height: 90px;
+    width: auto;
+    display: block;
+  }
+
+  .brand-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+    padding: 0;
+  }
+
+  .nav-left, .nav-right {
+    display: flex;
+    gap: 20px;
+  }
+
+  main {
+    margin-top: 160px;
+  }
+
+  section {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 34px;
+    font-family: Georgia, serif;
+    margin-bottom: 20px;
+  }
+
+  p {
+    max-width: 720px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+  }
+
+  .boxed-section {
+    background: var(--box-bg);
+    color: var(--box-text);
+    padding: 30px 20px;
+    border-radius: 12px;
+    margin-top: 40px;
+  }
+
+  .boxed-section h2 {
+    color: var(--box-header);
+  }
+
+  .boxed-section p {
+    color: var(--box-text);
+  }
+
+  .slider {
+    position: relative;
+    max-width: 690px;
+    margin: 40px auto;
+  }
+
+  .slider img {
+    width: 100%;
+    border-radius: 12px;
+    display: none;
+  }
+
+  .slider img.active {
+    display: block;
+  }
+
+  .slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(234, 219, 191, 0.9);
+    border: none;
+    font-size: 24px;
+    padding: 8px 14px;
+    cursor: pointer;
+    color: #2a3e24;
+  }
+
+  .slider button:hover {
+    background: var(--color-accent);
+    color: white;
+  }
+
+  .prev { left: 10px; }
+  .next { right: 10px; }
+
+  .thunderduck {
+    max-width: 800px;
+    margin: 60px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .thunderduck img {
+    max-width: 293px;
+    border-radius: 12px;
+  }
+
+  .video-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+
+  .video-wrapper video {
+    max-width: 473px;
+    border-radius: 12px;
+  }
+
+  .boxed-section img {
+    max-width: 687px;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+
+  .gif {
+  max-width: 500px;        
+  margin: 30px auto;       
+}
+
+.gif img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.site-footer {
+  background: #EADBBF;
+  padding: 20px 0;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+  color: #2a3e24;
+  font-size: 14px;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.site-footer p {
+  margin: 0;
+  text-align: center;
+}
+
+
+
+  @media (max-width: 900px) {
+    h2 { font-size: 30px; }
+    .thunderduck { text-align: center; }
+  }
+
+</style>
+</head>
+
+<body>
+
+<nav id="nav">
+  <div class="nav-left">
+    <a href="aboutme.html">About Me</a>
+  </div>
+
+  <a href="index.html" class="brand-link">
+    <img src="FullLogo_Transparent_NoBuffer.png" alt="Guld Design Logo" class="brand-logo">
+  </a>
+
+  <div class="nav-right">
+    <a href="abilities.html">Portfolio</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="css-animation">
+  <h2>CSS Animation</h2>
+  <p>I have hands-on experience creating CSS animations, and I enjoy experimenting with different effects to bring designs to life. The example below is a project I tried at home after class. It's a small demonstration of my ability to combine creativity with coding to produce smooth, engaging animations.</p>
+
+  <div class="gif">
+    <img src="css_animation.gif" alt="CSS Animation GIF">
+  </div>
+</section>
+
+
+<section id="style-tiles" class="boxed-section">
+  <h2>Style Tiles</h2>
+  <p>
+    For our first multimediadesign project, I focused on crafting the style tiles for our group's H&M redesign. I explored color palettes, typography, and visual elements to define a cohesive, modern, and functional aesthetic that guided the project's look and feel.
+  </p>
+  <img src="style_tile.png" alt="Style Tile">
+</section>
+
+<section id="illustration">
+  <h2>Illustration</h2>
+  <div class="slider">
+    <button class="prev">‹</button>
+    <button class="next">›</button>
+    <img src="1.png" alt= "illustration 1" class="active">
+    <img src="2.png" alt= "illustration 2">
+    <img src="3.png" alt= "illustration 3">
+    <img src="4.png" alt= "illustration 4">
+  </div>
+
+  <p>
+    A while back, I created four custom illustrations for my brother's website (can't show it just yet - it's still under wraps). The project was one of those classic <strong>"corporate website" vibes</strong>, but I got to bring a little extra personality into it. Even in a typically clean and professional context, I love finding ways to make visuals feel alive, approachable, and just a touch playful. It was a fun challenge to balance the usual structured, businessy style with something that really stands out. Each illustration had to be clear and functional, but I also made sure they had a spark of life that catches the eye.
+  </p>
+
+  <div class="thunderduck">
+    <img src="thunderduck.png" alt="thunderduck logo">
+    <p>
+      I also had the pleasure of illustrating a logo for my brother's Lego team: <strong>THUNDERDUCK</strong>. Yup, you read that right. The project was short, sweet, and a total blast - sometimes the best creative challenges are the ones that don’t take themselves too seriously.
+    </p>
+  </div>
+</section>
+
+<section id="animation" class="boxed-section">
+  <h2>Animation</h2>
+  <p class="description">On the right you'll see a project from my coursework exploring CSS animation techniques. It's a clean, experimental piece that allowed me to push the boundaries of interactivity and understand the technical side of motion design.</p> <p class="description">On the left, there’s a more recent personal project from the past year. This piece leans into a more artistic, expressive approach - blending style, narrative, and motion to create an engaging, visually rich experience. It reflects my ability to balance technical skill with creative vision.</p>
+  <div class="video-wrapper">
+    <video controls>
+      <source src="Finished_.mp4" type="video/mp4">
+    </video>
+    <video controls>
+      <source src="ultra_sej_bil.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<section id="photography">
+  <h2>Photography</h2>
+   <p>
+    I love capturing the world around me through my lens, with a special focus on nature and the subtle details of everyday environments. Whether it's the quiet beauty of a forest, the glow of a sunset, or the textures of urban life, photography allows me to explore and preserve moments that inspire me.
+  </p>
+  <div class="slider">
+    <button class="prev">‹</button>
+    <button class="next">›</button>
+    <img src="20251202_093816.jpg" alt="photo 1" class="active">
+    <img src="20250502_133229.jpg" alt="photo 2">
+    <img src="20230603_103457.jpg" alt="photo 3">
+    <img src="20250719_204328.jpg" alt="photo 4">
+  </div>
+</section>
+
+<section id="tone-of-voice" class="boxed-section">
+  <h2>Tone of Voice</h2>
+  <p>
+    For this project, I created this fantasy-ocean world with elves, sea creatures, and cryptids in mind. I developed a persona and tone of voice to match the vibes in Figma, and curated visuals and references to make everything feel cohesive and alive.
+  </p>
+  <img src="tone_of_voice.png" alt="tone of voice">
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Copyright © 2025 — Josefine Korsgaard Guldbek. All Rights Reserved.</p>
+</footer>
+
+
+<script>
+  (function() {
+    const nav = document.getElementById('nav');
+    let lastY = window.pageYOffset || 0;
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if(!ticking) {
+        window.requestAnimationFrame(() => {
+          const currentY = window.pageYOffset || 0;
+          nav.style.transform =
+            (currentY > lastY && currentY > 60) ? 'translateY(-100%)' : 'translateY(0)';
+          lastY = currentY <= 0 ? 0 : currentY;
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, {passive:true});
+  })();
+
+  document.querySelectorAll('.slider').forEach(slider => {
+    const images = slider.querySelectorAll('img');
+    let index = 0;
+
+    slider.querySelector('.next').onclick = () => {
+      images[index].classList.remove('active');
+      index = (index + 1) % images.length;
+      images[index].classList.add('active');
+    };
+
+    slider.querySelector('.prev').onclick = () => {
+      images[index].classList.remove('active');
+      index = (index - 1 + images.length) % images.length;
+      images[index].classList.add('active');
+    };
+  });
+</script>
+</body>
+</html>
